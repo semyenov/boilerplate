@@ -1,3 +1,42 @@
 .footer {
-
+  .payment {
+    margin-left: $spacer*4;
+    margin-top: $spacer/2;
+    p {
+      font-family: Roboto Condensed;
+      margin-bottom: $spacer/2;
+    }
+    ul {
+      list-style: none;
+      padding-left: 0;
+      margin-bottom: 0;
+      li {
+        display: inline-block;
+        @include sprite-h('../img/bg-cards.png',4,41.25px,24px, 1);
+      }
+    }
+    @include media-breakpoint-down(lg) {
+      width: 100%;
+      text-align: center;
+      display: none;
+    }
+  }
+  .navbar-wrapper {
+    .nav {
+      .nav-item {
+        .nav-link {
+          padding-left: 0 !important;
+          padding-right: 0 !important;
+        }
+      }
+    }
+    @include media-breakpoint-down(lg) {
+//      text-align: center;
+//      width: 100% !important;
+//      display: block;
+//      .nav {
+//        display: inline-block;
+//      }
+    }
+  }
 }

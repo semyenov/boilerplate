@@ -1,0 +1,45 @@
+.address {
+  .shop {
+    @include media-breakpoint-up(sm) {
+      @include aspect-ratio(1,1);
+    }
+    @include media-breakpoint-down(xs) {
+      @include aspect-ratio(8,3);
+    }
+    color: #fff;
+
+    .shop-descr {
+      @include centerer(true, true);
+      padding-top: 1px;
+      margin-top: -1px;
+      width: 100%;
+      hr {
+        width: 2rem;
+        background-color: $brand-primary;
+        color: $brand-primary;
+        border-color: $brand-primary;
+      }
+    }
+    .shop-bg {
+      transition: all 0.3s linear;
+      filter: saturate(0) brightness(50%);
+      -webkit-filter: saturate(0) brightness(50%);
+      background: $brand-danger;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+    }
+    &:hover,
+    &:focus,
+    &:active {
+      .shop-bg {
+        filter: saturate(100%) brightness(100%);
+        -webkit-filter: saturate(100%) brightness(100%);
+      }
+      .shop-descr {
+      }
+    }
+  }
+}

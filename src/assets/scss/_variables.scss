@@ -32,7 +32,7 @@ $gray-light:                #818a91 !default;
 $gray-lighter:              #eceeef !default;
 $gray-lightest:             #f7f7f9 !default;
 
-$brand-primary:             #0275d8 !default;
+$brand-primary:             #bb4c51 !default;
 $brand-success:             #5cb85c !default;
 $brand-info:                #5bc0de !default;
 $brand-warning:             #f0ad4e !default;
@@ -44,10 +44,10 @@ $brand-danger:              #d9534f !default;
 // Quickly modify global styling by enabling or disabling optional features.
 
 $enable-flex:               false !default;
-$enable-rounded:            true !default;
-$enable-shadows:            false !default;
-$enable-gradients:          false !default;
-$enable-transitions:        false !default;
+$enable-rounded:            false !default;
+$enable-shadows:            true !default;
+$enable-gradients:          true !default;
+$enable-transitions:        true !default;
 $enable-hover-media-query:  false !default;
 $enable-grid-classes:       true !default;
 
@@ -142,7 +142,7 @@ $grid-gutter-width:          1.875rem !default; // 30px
 //
 // Font, line-height, and color for body text, headings, and more.
 
-$font-family-sans-serif:     "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$font-family-sans-serif:     Roboto Condensed, "Helvetica Neue", Helvetica, Arial, sans-serif !default;
 $font-family-serif:          Georgia, "Times New Roman", Times, serif !default;
 $font-family-monospace:      Menlo, Monaco, Consolas, "Courier New", monospace !default;
 $font-family-base:           $font-family-sans-serif !default;
@@ -155,8 +155,8 @@ $font-size-lg:               1.25rem !default;
 $font-size-sm:               .875rem !default;
 $font-size-xs:               .75rem !default;
 
-$font-size-h1:               2.5rem !default;
-$font-size-h2:               2rem !default;
+$font-size-h1:               4rem !default;
+$font-size-h2:               3.13rem !default;
 $font-size-h3:               1.75rem !default;
 $font-size-h4:               1.5rem !default;
 $font-size-h5:               1.25rem !default;
@@ -239,7 +239,7 @@ $table-border-color:            $gray-lighter !default;
 //
 // For each of Bootstrap's buttons, define text, background and border color.
 
-$btn-padding-x:                  1rem !default;
+$btn-padding-x:                  2rem !default;
 $btn-padding-y:                  .375rem !default;
 $btn-font-weight:                normal !default;
 
@@ -366,7 +366,7 @@ $zindex-modal:             1050 !default;
 
 $navbar-border-radius:              $border-radius !default;
 $navbar-padding-horizontal:         $spacer !default;
-$navbar-padding-vertical:           ($spacer / 2) !default;
+$navbar-padding-vertical:           $spacer !default;
 
 $navbar-dark-color:                 rgba(255,255,255,.5) !default;
 $navbar-dark-hover-color:           rgba(255,255,255,.75) !default;
@@ -621,11 +621,11 @@ $thumbnail-border-radius:     $border-radius !default;
 
 // Breadcrumbs
 
-$breadcrumb-padding-vertical:   .75rem !default;
+$breadcrumb-padding-vertical:   2.5rem !default;
 $breadcrumb-padding-horizontal: 1rem !default;
 
-$breadcrumb-bg:                 $gray-lighter !default;
-$breadcrumb-divider-color:      $gray-light !default;
+$breadcrumb-bg:                 #fff !default;
+$breadcrumb-divider-color:      $gray-lighter !default;
 $breadcrumb-active-color:       $gray-light !default;
 $breadcrumb-divider:            "/" !default;
 

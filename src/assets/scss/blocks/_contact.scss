@@ -1,0 +1,14 @@
+.contact {
+  .section-header {
+    padding-top: $spacer;
+  }
+  .section-content {
+    padding-top: $spacer;
+    ul + img {
+      margin-top: $spacer;
+    }
+    img + img {
+      margin-top: $spacer/2;
+    }
+  }
+}

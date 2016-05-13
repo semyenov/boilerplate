@@ -1,0 +1,80 @@
+ul.i-style {
+  list-style: none;
+  padding-left: 0;
+  i {
+    color: $brand-primary;
+    margin-right: $spacer/2;
+  }
+  p {
+    margin-bottom: $spacer/2;
+  }
+}
+a.btn {
+  i {
+    display: inline-block;
+    position: relative;
+    font-size: 0.6em;
+    top: -0.1em;
+    margin-left: $spacer/2;
+  }
+}
+
+p {
+  font-family: Minion Pro;
+}
+
+.card {
+  padding-top: $spacer;
+  padding-bottom: $spacer;
+  margin-bottom: $spacer*2;
+  .card-block {
+    img.img-fluid {
+      max-height: 250px;
+      display: inline-block;
+    }
+    .card-title {
+      font-weight: 700;
+      font-size: rem(18px);
+      text-transform: uppercase;
+      margin-top: $spacer*2;
+      height: 40px;
+      overflow: hidden;
+      margin-bottom: $spacer;
+    }
+    .card-text {
+      height: 50px;
+      overflow: hidden;
+    }
+  }
+}
+a.card {
+  color: $gray-dark;
+  transition: all 0.3s linear;
+  &:hover,
+  &:focus,
+  &:active {
+    color: lighten($gray-dark,10);
+    text-decoration: none;
+    border-color: $gray-light;
+  }
+}
+.breadcrumb {
+  border-bottom: 1px solid $gray-lighter;
+  &>li {
+    display: inline-block;
+    float: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    a {
+      color: $gray;
+      &:hover,
+      &:focus,
+      &:after {
+        color: lighten($gray,10);
+      }
+    }
+  }
+}
+.header.bg-inverse {
+  background-color: black;
+}

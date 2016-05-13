@@ -1,0 +1,15 @@
+.section {
+  .section-header {
+    padding-top: $spacer*5;
+    h2 {
+      text-transform: uppercase;
+      text-align: center;
+      font-family: Minion Pro;
+      font-weight: 900;
+    }
+  }
+  .section-content {
+    padding-top: $spacer*3;
+    padding-bottom: $spacer*5;
+  }
+}

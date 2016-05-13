@@ -1,0 +1,17 @@
+.breadcrumbs {
+  border-bottom: 1px solid $gray-lighter;
+  &>li {
+    display: inline-block;
+    float: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    a {
+      color: $gray;
+      &:hover,
+      &:focus,
+      &:after {
+        color: lighten($gray,10);
+      }
+    }
+  }
+}

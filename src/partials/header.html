@@ -1,3 +1,51 @@
-<div class="header">
-  header
+<div class="container-fluid header bg-inverse {{#ifpage 'index'}} bg-top{{/ifpage}}">
+  <div class="row">
+    <div class="container">
+      <div class="row">
+        <nav class="navbar navbar-dark">
+          <button class="navbar-toggler hidden-sm-up pull-right" type="button" data-toggle="collapse" data-target="#navbar">
+            &#9776;
+          </button>
+          <a class="navbar-brand" href="#"><img src="assets/img/logo-small.png" alt=""></a>
+          <div class="navbar-wrapper collapse navbar-toggleable-xs pull-xs-left  pull-lg-right" id="navbar">
+            <ul class="nav navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">каталог</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">новости</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">ИДЕИ ПОДАРКОВ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">МАГАЗИНы</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">ОБРАТНАЯ СВЯЗЬ</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </div>
+  {{#ifpage 'index'}}
+  <div class="row hero">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 text-xs-center logo-big">
+          <img class="img-fluid inline" src="assets/img/logo-big.png" alt="">
+        </div>
+        <div class="col-lg-6 text-xs-center clock">
+          <ul id="clock">
+            <li id="sec"></li>
+            <li id="hour"></li>
+            <li id="min"></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  {{/ifpage}}
 </div>

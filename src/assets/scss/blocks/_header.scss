@@ -1,3 +1,156 @@
-.header {
+.navbar.navbar-dark {
+  z-index: 2;
+}
+.navbar-wrapper {
+  @include clearfix;
+  @include media-breakpoint-down(xs) {
+    width: 100%;
+    .nav-item {
+      display: block;
+      margin-left: 0 !important;
+      width: 100%;
+      text-align: center;
+    }
+  }
+  @include media-breakpoint-down(md) {
+    width: 100%;
+  }
+  @include media-breakpoint-up(sm) {
+    height: auto !important;
+  }
+}
+.nav.navbar-nav {
+  @include clearfix;
+  @include media-breakpoint-down(md) {
+    margin-top: $spacer;
+    text-align: center;
+  }
+  .nav-item {
+    .nav-link {
+      text-transform: uppercase;
+      padding-left: 0.4rem;
+      padding-right: 0.4rem;
+      letter-spacing: 1px;
+      @include media-breakpoint-up(xl) {
+        padding-left: 0.7rem;
+        padding-right: 0.7rem;
+      }
+      @include media-breakpoint-up(lg) {
+        padding-top: 1.638rem;
+        padding-bottom: 1.238rem;
+      }
+    }
+    @include media-breakpoint-down(md) {
+      display: inline-block;
+      float: none;
+    }
+  }
+}
+.navbar-toggler {
+  margin-top: $spacer*1.2;
+}
+.navbar-brand {
+  @include media-breakpoint-down(md) {
+    @include centerer(true,false);
+    position: relative;
+  }
+}
+.inline {
+  display: inline-block !important;
+}
+.hero {
+  padding-top: $spacer*6;
+  padding-bottom: $spacer*4;
+  @include media-breakpoint-down(sm) {
+    padding-top: $spacer*2;
+    padding-bottom: $spacer*2;
+  }
+}
+.bg-top {
+  background: linear-gradient(to top, transparent, rgba(0, 0, 0, 0.8)), url(../img/top-bar-img.jpg);
+  background-position: center top, center top;
+}
 
+.logo-big {
+  z-index: 2;
+}
+.clock {
+  z-index: 1;
+}
+
+$koef:  0.89;
+
+#clock {
+  margin-top: -300px;
+  padding-left: 0;
+  position: relative;
+  display: inline-block;
+  background: url(../img/watch.png);
+  background-size: cover;
+  list-style: none;
+  z-index: 1;
+  width: 606px * $koef;
+  height: 845px * $koef;
+  overflow: hidden;
+  $koef:  0.7;
+  @include media-breakpoint-down(lg) {
+    margin-top: -250px;
+    width: 606px * $koef;
+    height: 845px * $koef;
+  }
+  $koef:  0.5;
+  @include media-breakpoint-down(sm) {
+    margin-top: -100px;
+    width: 606px * $koef;
+    height: 845px * $koef;
+  }
+  @include media-breakpoint-down(xs) {
+    display: none;
+  }
+}
+
+#sec, #min, #hour {
+  position: absolute;
+  width: 40px * $koef;
+  height: 845px * $koef;
+  top: 120px * $koef;
+  left: (606px - 40px) / 2 * $koef;
+  $koef:  0.7;
+  @include media-breakpoint-down(lg) {
+    width: 40px * $koef;
+    height: 845px * $koef;
+    top: 120px * $koef;
+    left: (606px - 40px) / 2 * $koef;
+  }
+  $koef:  0.5;
+  @include media-breakpoint-down(sm) {
+    width: 40px * $koef;
+    height: 845px * $koef;
+    top: 120px * $koef;
+    left: (606px - 40px) / 2 * $koef;
+  }
+}
+
+#sec {
+  background: url(../img/second-hand.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  z-index: 3;
+}
+
+#min {
+  background: url(../img/minute-hand.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  z-index: 2;
+}
+
+#hour {
+  background: url(../img/hour-hand.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  z-index: 1;
 }

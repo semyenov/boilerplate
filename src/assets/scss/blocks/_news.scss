@@ -1,0 +1,27 @@
+.news {
+  background: url(../img/bg-section-3.jpg) no-repeat center top;
+  background-color: #EBEBEB;
+  a.card {
+    border: none;
+    background: none;
+    margin-bottom: $spacer/2;
+    @include clearfix;
+    .card-block {
+      padding: 0;
+      .card-date {
+        margin-top: $spacer;
+        margin-bottom: 0;
+        color: $brand-primary;
+        & + .card-title {
+          margin-top: 0;
+        }
+      }
+      @include media-breakpoint-down(lg) {
+        .img-fluid {
+//          @include centerer(true,false);
+          position: relative;
+        }
+      }
+    }
+  }
+}
