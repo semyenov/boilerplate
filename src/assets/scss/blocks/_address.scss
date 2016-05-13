@@ -6,8 +6,8 @@
     @include media-breakpoint-down(xs) {
       @include aspect-ratio(8,3);
     }
+    cursor: pointer;
     color: #fff;
-
     .shop-descr {
       @include centerer(true, true);
       padding-top: 1px;
@@ -37,8 +37,6 @@
       .shop-bg {
         filter: saturate(100%) brightness(100%);
         -webkit-filter: saturate(100%) brightness(100%);
-      }
-      .shop-descr {
       }
     }
   }
