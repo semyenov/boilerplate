@@ -1,3 +1,16 @@
-<div class="${name}">
-  ${name}
-</div>
+<section class="container-fluid section ${name}">
+  <div class="row">
+    <div class="container">
+      <div class="row section-header">
+        <div class="col-xs-12">
+          <h2 class="text-xs-center">${name}</h2>
+        </div>
+      </div>
+      <div class="row section-content">
+        <div class="col-xs-12">
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
