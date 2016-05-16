@@ -15,7 +15,7 @@
   }
 }
 
-@mixin sprite-h ($imgUrl,$n,$width,$height, $scale) {
+@mixin sprite-h ($imgUrl,$n,$width,$height,$scale) {
   &:before {
     background: url(#{$imgUrl});
     width: $width * $scale;
@@ -70,4 +70,46 @@ $browser-context: $font-size-root;
   }
 
   @return $pixels / $context * 1rem;
+}
+
+/* 
+Animations
+Usage example: 
+  @include keyframes(slide-down) {
+    0% { opacity: 1; }
+    90% { opacity: 0; }
+  }
+
+  .element {
+    width: 100px;
+    height: 100px;
+    background: black;
+    @include animation('slide-down 5s 3');
+  }
+*/
+
+@mixin keyframes($animation-name) {
+    @-webkit-keyframes #{$animation-name} {
+        @content;
+    }
+    @-moz-keyframes #{$animation-name} {
+        @content;
+    }  
+    @-ms-keyframes #{$animation-name} {
+        @content;
+    }
+    @-o-keyframes #{$animation-name} {
+        @content;
+    }  
+    @keyframes #{$animation-name} {
+        @content;
+    }
+}
+
+@mixin animation($str) {
+  -webkit-animation: #{$str};
+  -moz-animation: #{$str};
+  -ms-animation: #{$str};
+  -o-animation: #{$str};
+  animation: #{$str};      
 }
