@@ -40,4 +40,3 @@ elif [ "$COMMAND" == "rp" ]; then
   rm ./src/pages/$2.html
   echo "Page \"$2\" removed!"
 fi
-ркддщ
