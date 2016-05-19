@@ -20,6 +20,12 @@
         .img-fluid {
 //          @include centerer(true,false);
           position: relative;
+          margin-top: 1.2rem;
+        }
+      }
+      @include media-breakpoint-down(md) {
+        .img-fluid {
+          margin-top: 0;
         }
       }
     }

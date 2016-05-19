@@ -61,6 +61,7 @@
 .hero {
   padding-top: $spacer*6;
   padding-bottom: $spacer*4;
+  overflow: hidden;
   @include media-breakpoint-down(sm) {
     padding-top: $spacer*2;
     padding-bottom: $spacer*2;
@@ -70,7 +71,11 @@
   background: linear-gradient(to top, transparent, rgba(0, 0, 0, 0.8)), url(../img/top-bar-img.jpg);
   background-position: center top, center top;
 }
-
+@include keyframes(slide-from-right) {
+  0%  { position: relative; }
+  10% { opacity: 0; right: -1000px;}
+  90% { opacity: 1; right: 0;}
+}
 .logo-big {
   z-index: 2;
 }
@@ -81,6 +86,9 @@
 $koef:  0.89;
 
 #clock {
+  &.slide {
+    @include animation('slide-from-right 2s 1');
+  }
   margin-top: -300px;
   padding-left: 0;
   position: relative;
@@ -92,6 +100,7 @@ $koef:  0.89;
   width: 606px * $koef;
   height: 845px * $koef;
   overflow: hidden;
+  opacity: 0;
   $koef:  0.7;
   @include media-breakpoint-down(lg) {
     margin-top: -250px;

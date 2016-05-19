@@ -31,10 +31,18 @@ $(function() {
 });
 
 
+
 $(document).ready(function() {
 //  $('.news .card-block').equalize();
   $(".card-title, .card-text").dotdotdot({
     watch: 'window',
-    height: '40px'
+    height: '50px'
   });
+});
+
+Pace.on('done', function() {
+  $('#clock').addClass('slide');
+  setInterval(function(){
+    $('#clock').css('opacity',1);
+  },1000);
 });

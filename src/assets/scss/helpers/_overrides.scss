@@ -20,7 +20,7 @@ a.btn {
 }
 
 p {
-  font-family: Minion Pro;
+  font-family: Tinos;
 }
 
 .card {
@@ -29,7 +29,7 @@ p {
   margin-bottom: $spacer*2;
   .card-block {
     img.img-fluid {
-      max-height: 250px;
+      max-height: rem(250px);
       display: inline-block;
     }
     .card-title {
@@ -37,9 +37,11 @@ p {
       font-size: rem(18px);
       text-transform: uppercase;
       margin-top: $spacer*2;
-      height: 40px;
+      height: 50px;
       overflow: hidden;
       margin-bottom: $spacer;
+      line-height: 1.3;
+      span {border-bottom: 1px dotted rgba(0,0,0,0); transition: all 0.1s linear;}
     }
     .card-text {
       height: 50px;
@@ -56,6 +58,11 @@ a.card {
     color: lighten($gray-dark,10);
     text-decoration: none;
     border-color: $gray-light;
+    .card-title span{
+      color: lighten($gray,10);
+      border-bottom: 1px dotted lighten($gray,30);
+      display: inline;
+    }
   }
 }
 .breadcrumb {
