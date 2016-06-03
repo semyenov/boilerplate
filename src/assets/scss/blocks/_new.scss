@@ -1,3 +1,8 @@
 .new {
   background: url(../img/bg-section-2.jpg) no-repeat center top;
+  .section-content>div:last-child() {
+    @include media-breakpoint-only(lg){
+      display: none;
+    }
+  }
 }

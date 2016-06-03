@@ -15,6 +15,23 @@
   }
 }
 
+@mixin hfa {
+  @if $enable-hover-media-query {
+    &:focus,
+    &:active {
+      @content
+    }
+    @include hover { @content }
+  }
+  @else {
+    &:focus,
+    &:active,
+    &:hover {
+      @content
+    }
+  }
+}
+
 @mixin sprite-h ($imgUrl,$n,$width,$height,$scale) {
   &:before {
     background: url(#{$imgUrl});

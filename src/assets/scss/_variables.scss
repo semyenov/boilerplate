@@ -415,12 +415,12 @@ $pagination-padding-y-lg:             .75rem !default;
 
 
 $pagination-color:                     $link-color !default;
-$pagination-bg:                        #fff !default;
-$pagination-border-width:              $border-width !default;
-$pagination-border-color:              #ddd !default;
+$pagination-bg:                        transparent !default;
+$pagination-border-width:              0 !default;
+$pagination-border-color:              transparent !default;
 
 $pagination-hover-color:               $link-hover-color !default;
-$pagination-hover-bg:                  $gray-lighter !default;
+$pagination-hover-bg:                  transparent !default;
 $pagination-hover-border:              #ddd !default;
 
 $pagination-active-color:              #fff !default;
@@ -428,8 +428,8 @@ $pagination-active-bg:                 $brand-primary !default;
 $pagination-active-border:             $brand-primary !default;
 
 $pagination-disabled-color:            $gray-light !default;
-$pagination-disabled-bg:               #fff !default;
-$pagination-disabled-border:           #ddd !default;
+$pagination-disabled-bg:               transparent !default;
+$pagination-disabled-border:           transparent !default;
 
 
 // Pager

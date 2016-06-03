@@ -22,7 +22,6 @@ fi
 if [ "$COMMAND" == "cc" ]; then
   touch ./src/assets/scss/components/_$2.scss
   sed -e "s/\${name}/$2/" ./src/assets/scss/components/component.template >> ./src/assets/scss/components/_$2.scss
-
   echo "@import \"$2\";" >> ./src/assets/scss/components/_all.scss
   echo "Component \"$2\" created!"
 elif [ "$COMMAND" == "rc" ]; then

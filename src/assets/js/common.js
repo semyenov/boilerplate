@@ -1,3 +1,5 @@
+// Clocks
+
 $(function() {
 
   setInterval( function() {
@@ -30,7 +32,15 @@ $(function() {
 
 });
 
+Pace.on('done', function() {
+  $('#clock').addClass('slide');
+  setInterval(function(){
+    $('#clock').css('opacity',1);
+  },1000);
+});
 
+
+// DotDotDot
 
 $(document).ready(function() {
 //  $('.news .card-block').equalize();
@@ -40,9 +50,27 @@ $(document).ready(function() {
   });
 });
 
-Pace.on('done', function() {
-  $('#clock').addClass('slide');
-  setInterval(function(){
-    $('#clock').css('opacity',1);
-  },1000);
+$(window).load(function() {
+  var footerHeight = 0;
+  var footerTop = 0;
+  var $footer = $(".footer");
+  positionFooter();
+  function positionFooter() {
+    footerHeight = $footer.height();
+    footerTop = ($(window).scrollTop() + $(window).height() - footerHeight) + "px";
+
+    if (($(document.body).height() + footerHeight) < $(window).height()) {
+      $footer.css({
+          position: "absolute",
+          top: footerTop
+      })
+    } else {
+      $footer.css({
+          position: "relative"
+      });
+    }
+  }
+  $(window)
+    .scroll(positionFooter)
+    .resize(positionFooter);
 });

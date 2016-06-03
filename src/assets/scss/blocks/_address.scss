@@ -31,9 +31,7 @@
       top: 0;
       left: 0;
     }
-    &:hover,
-    &:focus,
-    &:active {
+    @include hfa {
       .shop-bg {
         filter: saturate(100%) brightness(100%);
         -webkit-filter: saturate(100%) brightness(100%);

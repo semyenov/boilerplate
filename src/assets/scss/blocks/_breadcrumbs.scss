@@ -1,5 +1,6 @@
 .breadcrumbs {
   border-bottom: 1px solid $gray-lighter;
+  margin-bottom: 0;
   &>li {
     display: inline-block;
     float: none;
@@ -7,9 +8,7 @@
     letter-spacing: 1px;
     a {
       color: $gray;
-      &:hover,
-      &:focus,
-      &:after {
+      @include hfa {
         color: lighten($gray,10);
       }
     }
