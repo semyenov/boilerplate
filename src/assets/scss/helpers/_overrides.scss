@@ -1,3 +1,10 @@
+// Header
+
+.header.bg-inverse {
+  background-color: black;
+}
+
+// Lists
 
 ul.i-style {
   list-style: none;
@@ -23,6 +30,8 @@ a.btn {
 p {
   font-family: Tinos;
 }
+
+// Cards
 
 .card {
   padding-top: $spacer;
@@ -74,6 +83,18 @@ a.card {
     }
   }
 }
+
+// Buttons
+
+.btn:focus, .btn.focus, .btn:active:focus, .btn:active.focus, .btn.active:focus, .btn.active.focus {
+  outline: none !important;
+}
+button:focus, button.focus, button:active:focus, button:active.focus, button.active:focus, button.active.focus {
+  outline: none !important;
+}
+
+// Breadcrumbs
+
 .breadcrumb {
   border-bottom: 1px solid $gray-lighter;
   &>li {
@@ -89,6 +110,25 @@ a.card {
     }
   }
 }
-.header.bg-inverse {
-  background-color: black;
+
+// Modals
+
+.modal {
+  .modal-dialog {
+    .modal-content {
+      border-radius: 0;
+      border: 1px solid #E5E5E5;
+      h1,h2,h3,h4,h5 {
+        text-transform: uppercase;
+        // font-family: Tinos;
+        // font-weight: bold;
+      }
+      .modal-body {
+        padding: $spacer*2 $spacer*3;
+      }
+      .modal-footer {
+        padding: $spacer $spacer*3 $spacer*2;
+      }
+    }
+  }
 }

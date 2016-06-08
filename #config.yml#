@@ -37,11 +37,9 @@ PATHS:
     - "bower_components/bootstrap/dist/js/bootstrap.min.js"
     # Libraries
     - "bower_components/slick-carousel/slick/slick.min.js"
-    - "bower_components/iCheck/icheck.min.js"
     - "bower_components/holderjs/holder.min.js"
     - "bower_components/PACE/pace.min.js"
     - "bower_components/equalize/js/equalize.min.js"
-    - "bower_components/jQuery.dotdotdot/src/jquery.dotdotdot.min.js"
     # My JS files
     - "src/assets/js/!(common).js"
     - "src/assets/js/common.js"

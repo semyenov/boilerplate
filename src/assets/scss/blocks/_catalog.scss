@@ -1,0 +1,38 @@
+.catalog {
+  background-color: #EBEBEB;
+  .section-content {
+    .filter form {
+      padding-top: $spacer*1.5;
+      padding-left: $spacer*2;
+      padding-right: $spacer*2;
+      background: #fff;
+      border: 1px solid #e5e5e5;
+      margin-bottom: $spacer*2;
+      h4 {
+        margin-bottom: $spacer*1.25;
+      }
+      h5 {
+        margin-bottom: $spacer;
+      }
+      .radio,
+      .checkbox {
+        label {
+          padding-left: 0;
+          text-transform: uppercase;
+        }
+        @include media-breakpoint-between(sm,md) {
+          width: 50%;
+          display: inline-block;
+          float: left;
+          margin-top: -.25rem;
+          padding-right: $spacer/2;
+          &:nth-child(2n){
+            clear: left;
+          }
+        }
+      }
+      &+form {
+      }
+    }
+  }
+}

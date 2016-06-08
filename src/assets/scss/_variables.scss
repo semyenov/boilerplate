@@ -45,8 +45,8 @@ $brand-danger:              #d9534f !default;
 
 $enable-flex:               false !default;
 $enable-rounded:            false !default;
-$enable-shadows:            true !default;
-$enable-gradients:          true !default;
+$enable-shadows:            false !default;
+$enable-gradients:          false !default;
 $enable-transitions:        true !default;
 $enable-hover-media-query:  false !default;
 $enable-grid-classes:       true !default;
@@ -292,14 +292,14 @@ $input-bg-disabled:              $gray-lighter !default;
 $input-color:                    $gray !default;
 $input-border-color:             #ccc !default;
 $input-btn-border-width:         $border-width !default; // For form controls and buttons
-$input-box-shadow:               inset 0 1px 1px rgba(0,0,0,.075) !default;
+$input-box-shadow:               none;
 
 $input-border-radius:            $border-radius !default;
 $input-border-radius-lg:         $border-radius-lg !default;
 $input-border-radius-sm:         $border-radius-sm !default;
 
-$input-border-focus:             #66afe9 !default;
-$input-box-shadow-focus:         rgba(102,175,233,.6) !default;
+$input-border-focus:             $brand-primary !default;
+$input-box-shadow-focus:         none;
 
 $input-color-placeholder:        #999 !default;
 
@@ -531,9 +531,9 @@ $label-font-weight:           bold !default;
 // Modals
 
 // Padding applied to the modal body
-$modal-inner-padding:         15px !default;
+$modal-inner-padding:         $spacer*2 !default;
 
-$modal-title-padding:         15px !default;
+$modal-title-padding:         $spacer !default;
 $modal-title-line-height:     $line-height !default;
 
 $modal-content-bg:                             #fff !default;
@@ -544,8 +544,8 @@ $modal-backdrop-opacity:      .5 !default;
 $modal-header-border-color:   #e5e5e5 !default;
 $modal-footer-border-color:   $modal-header-border-color !default;
 
-$modal-lg:                    900px !default;
-$modal-md:                    600px !default;
+$modal-lg:                    400px !default;
+$modal-md:                    400px !default;
 $modal-sm:                    300px !default;
 
 

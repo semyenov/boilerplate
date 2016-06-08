@@ -1,0 +1,26 @@
+.pagination {
+  font-size: 0;
+  width: 100%;
+  margin: 0;
+  padding: $spacer*2.5 0;
+  border-top: 1px solid #e5e5e5;
+  .page-item {
+    display: inline-block;
+    float: none;
+    margin: 0;
+    font-family: $font-family-sans-serif;
+    font-size: 1rem;
+    i {
+      font-size: 0.8em;
+      &.icon-arrow-left {
+        padding-right: $spacer*0.1;
+      }
+    }
+    .page-link {
+      padding-left: $spacer*0.78;
+      @include hfa {
+        text-decoration: none;
+      }
+    }
+  }
+}

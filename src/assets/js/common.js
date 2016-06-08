@@ -48,6 +48,11 @@ $(document).ready(function() {
     watch: 'window',
     height: '50px'
   });
+  $('input').iCheck({
+    checkboxClass: 'icheckbox_square',
+    radioClass: 'iradio_square',
+    increaseArea: '20%' // optional
+  });
 });
 
 $(window).load(function() {

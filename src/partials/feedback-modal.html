@@ -1,0 +1,30 @@
+<div id="feedback-modal" class="modal fade feedback-modal" tabindex="-1" aria-hidden="true">
+  <form class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-xs-center">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h3 class="modal-title" id="myModalLabel">Обратная связь</h3>
+      </div>
+      <div class="modal-body">
+        <fieldset class="form-group">
+          <label for="name">Имя</label>
+          <input type="text" class="form-control" id="name" name="name">
+        </fieldset>
+        <fieldset class="form-group">
+          <label for="phone">Телефон</label>
+          <input type="text" class="form-control" id="phone" name="phone">
+        </fieldset>
+        <fieldset class="form-group">
+          <label for="message">Сообщение</label>
+          <textarea type="text" class="form-control" id="message" name="message" rows="6">
+          </textarea>
+        </fieldset>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary-outline">Отправить</button>
+      </div>
+    </div>
+  </form>
+</div>

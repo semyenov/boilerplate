@@ -1,5 +1,7 @@
 .navbar.navbar-dark {
   z-index: 2;
+  padding-top: $spacer*2;
+  padding-bottom: $spacer*2;
 }
 .navbar-wrapper {
   @include clearfix;
@@ -26,6 +28,11 @@
     text-align: center;
   }
   .nav-item {
+    .btn {
+      @include media-breakpoint-up(lg) {
+        margin-top: 1.638rem - $btn-padding-y;
+      }
+    }
     .nav-link {
       text-transform: uppercase;
       padding-left: 0.4rem;

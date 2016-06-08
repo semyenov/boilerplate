@@ -24,7 +24,8 @@
     "font-awesome": "^4.6.1",
     "PACE": "pace#^1.0.2",
     "equalize": "^1.0.2",
-    "jQuery.dotdotdot": "dotdotdot#^1.8.1"
+    "jQuery.dotdotdot": "dotdotdot#^1.8.1",
+    "iCheck": "^1.0.2"
   },
   "private": true
 }
