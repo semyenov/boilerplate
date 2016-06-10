@@ -28,6 +28,8 @@ PATHS:
     - "bower_components/simple-line-icons/scss"
     - "bower_components/font-awesome/scss"
     - "bower_components/PACE/themes"
+    - "bower_components/easyzoom/css"
+#    - "bower_components/magnificent/src/css"
   # Paths to JavaScript libraries, which are compined into one file
   javascript:
     # Libraries requried by Bootstrap
@@ -42,6 +44,14 @@ PATHS:
     - "bower_components/PACE/pace.min.js"
     - "bower_components/equalize/js/equalize.min.js"
     - "bower_components/jQuery.dotdotdot/src/jquery.dotdotdot.min.js"
+    - "bower_components/easyzoom/dist/easyzoom.js"
+#    - "bower_components/jquery-bridget/jquery.bridget.js"
+#    - "bower_components/jquery-mousewheel/jquery.mousewheel.js"
+#    - "bower_components/jquery.threedubmedia/event.drag/jquery.event.drag.js"
+#    - "bower_components/hammerjs/hammer.js"
+#    - "bower_components/prevent-ghost-click/PreventGhostClick.js"
+#    - "bower_components/magnificent/src/js/mag.js"
+#    - "bower_components/magnificent/src/js/mag-jquery.js"
     # My JS files
     - "src/assets/js/!(common).js"
     - "src/assets/js/common.js"

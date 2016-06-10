@@ -1,0 +1,56 @@
+.detail {
+  .section-content {
+    .images {
+      .slider-preview {
+        .img-holder {
+          >div {
+            @include centerer(true,false);
+            position: relative;
+          }
+        }
+      }
+      .fit {
+        @include media-breakpoint-up(sm){
+          padding: 0 $spacer*6;
+        }
+        .slider-thumb {
+          margin-bottom: $spacer*3;
+          .img-holder {
+            cursor: pointer;
+            img {
+              @include centerer(true,false);
+              position: relative;
+            }
+          }
+        }
+      }
+    }
+    .description {
+      @include media-breakpoint-down(xs) {
+        text-align: center;
+      }
+      .article {
+        text-transform: uppercase;
+        margin-bottom: $spacer*2;
+      }
+      .price {
+        font-size: 2em;
+      }
+      .action {
+        @include clearfix;
+        .btn {
+          margin-top: 0.3rem;
+        }
+      }
+      hr {
+        margin-bottom: $spacer*2;
+        &:nth-child(3) {
+          margin-bottom: $spacer;
+        }
+      }
+      ul.i-style{
+        margin-top: $spacer;
+      }
+    }
+  }
+}

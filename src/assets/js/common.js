@@ -40,7 +40,7 @@ Pace.on('done', function() {
 });
 
 
-// DotDotDot
+// DotDotDot, Zoom, Slider
 
 $(document).ready(function() {
 //  $('.news .card-block').equalize();
@@ -53,6 +53,24 @@ $(document).ready(function() {
     radioClass: 'iradio_square',
     increaseArea: '20%' // optional
   });
+  $('.slider-preview').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    infinite: false,
+    arrows: false,
+    dots: false,
+    fade: true,
+    asNavFor: '.slider-thumb'
+  });
+  $('.slider-thumb').slick({
+    centerMode: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    asNavFor: '.slider-preview',
+    dots: false,
+    focusOnSelect: true
+  });
+  $('.easyzoom').easyZoom();
 });
 
 $(window).load(function() {

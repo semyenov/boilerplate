@@ -25,7 +25,10 @@
     "PACE": "pace#^1.0.2",
     "equalize": "^1.0.2",
     "jQuery.dotdotdot": "dotdotdot#^1.8.1",
-    "iCheck": "^1.0.2"
+    "iCheck": "^1.0.2",
+    "ez-plus": "^1.1.20",
+    "magnificent": "^2.1.5",
+    "easyzoom": "^2.4.0"
   },
   "private": true
 }

@@ -17,6 +17,7 @@ ul.i-style {
     margin-bottom: $spacer/2;
   }
 }
+
 a.btn {
   i {
     display: inline-block;
@@ -118,10 +119,8 @@ button:focus, button.focus, button:active:focus, button:active.focus, button.act
     .modal-content {
       border-radius: 0;
       border: 1px solid #E5E5E5;
-      h1,h2,h3,h4,h5 {
+      h3 {
         text-transform: uppercase;
-        // font-family: Tinos;
-        // font-weight: bold;
       }
       .modal-body {
         padding: $spacer*2 $spacer*3;
@@ -131,4 +130,18 @@ button:focus, button.focus, button:active:focus, button:active.focus, button.act
       }
     }
   }
+}
+
+// Zoom
+
+.easyzoom-flyout {
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+//Slider
+
+.slick-list {
+  padding: 0 !important;
 }

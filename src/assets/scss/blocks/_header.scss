@@ -32,6 +32,9 @@
       @include media-breakpoint-up(lg) {
         margin-top: 1.638rem - $btn-padding-y;
       }
+      @include media-breakpoint-only(sm) {
+        margin-top: $spacer;
+      }
     }
     .nav-link {
       text-transform: uppercase;
