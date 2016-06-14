@@ -1,0 +1,55 @@
+.service {
+//  background-color: #EBEBEB;
+  .section-header {
+
+  }
+  .section-content {
+    h5 {
+      margin-bottom: $spacer;
+    }
+    p {
+      margin-bottom: 0;
+    }
+    hr {
+      margin-bottom: $spacer*2;
+    }
+    .employee{
+      margin-bottom: $spacer;
+      &:nth-child(2n+1) {
+        clear: left;
+      }
+      .p-l-0 {
+        @include media-breakpoint-up(lg){
+          padding-top: $spacer;
+        }
+        @include media-breakpoint-down(md){
+          padding-top: $spacer*0.8;
+        }
+        @include media-breakpoint-only(xs){
+          padding-left: $spacer !important;
+        }
+      }
+      img {
+        display: inline-block;
+      }
+      h6{
+        color: $brand-primary;
+        margin-bottom: 0;
+      }
+    }
+    .cert {
+      margin-bottom: $spacer;
+    }
+    .left {
+      margin-bottom: $spacer*2;
+      @include media-breakpoint-down(xs) {
+        text-align: center;
+      }
+    }
+    .right {
+      img + img {
+        margin-top: $spacer;
+      }
+    }
+  }
+}
