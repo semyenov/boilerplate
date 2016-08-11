@@ -26,20 +26,19 @@ PATHS:
   sass:
     - "bower_components/bootstrap/scss"
     - "bower_components/simple-line-icons/scss"
-    - "bower_components/font-awesome/scss"
     - "bower_components/PACE/themes"
   # Paths to JavaScript libraries, which are compined into one file
   javascript:
     # Libraries requried by Bootstrap
-    - "bower_components/jquery/dist/jquery.min.js"
-    - "bower_components/tether/dist/js/tether.min.js"
+    - "bower_components/jquery/dist/jquery.js"
+    - "bower_components/tether/dist/js/tether.js"
     # Core Bootstrap files
-    - "bower_components/bootstrap/dist/js/bootstrap.min.js"
+    - "bower_components/bootstrap/dist/js/bootstrap.js"
     # Libraries
-    - "bower_components/slick-carousel/slick/slick.min.js"
-    - "bower_components/holderjs/holder.min.js"
-    - "bower_components/PACE/pace.min.js"
-    - "bower_components/equalize/js/equalize.min.js"
+    - "bower_components/underscore/underscore.js"
+    - "bower_components/backbone/backbone.js"
+    - "bower_components/holderjs/holder.js"
+    - "bower_components/PACE/pace.js"
     # My JS files
     - "src/assets/js/!(common).js"
     - "src/assets/js/common.js"
