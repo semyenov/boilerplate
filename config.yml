@@ -13,7 +13,6 @@ UNCSS_OPTIONS:
   ignore:
 #    - !!js/regexp .foundation-mq
 #    - !!js/regexp ^\.is-.*
-
 # Gulp will reference these paths when it copies files
 PATHS:
   # Path to dist folder
@@ -37,6 +36,7 @@ PATHS:
     # Libraries
     - "bower_components/underscore/underscore.js"
     - "bower_components/backbone/backbone.js"
+    - "bower_components/backbone.paginator/lib/backbone.paginator.js"
     - "bower_components/holderjs/holder.js"
     - "bower_components/PACE/pace.js"
     # My JS files

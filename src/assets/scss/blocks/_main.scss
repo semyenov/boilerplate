@@ -1,0 +1,13 @@
+.main {
+  [class^=icon-]{
+    position: relative;
+    top: 1px;
+    font-size: .95rem;
+  }
+  #message {
+    position: fixed;
+    right: 1rem;
+    top: 1rem;
+    display: none;
+  }
+}
