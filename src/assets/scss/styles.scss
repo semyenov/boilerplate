@@ -1,12 +1,9 @@
 @charset 'utf-8';
 /* Core */
 @import 'variables';
-@import 'bootstrap';
+@import 'groundwork';
 
 /* Fonts */
-@import 'font-awesome';
-@import 'simple-line-icons';
-
 
 /* Helpers */
 @import 'helpers/mixins';
@@ -14,8 +11,6 @@
 
 /* Libs */
 @import 'black/pace-theme-center-simple';
-@import 'libs/slick/slick';
-@import 'libs/slick/slick-theme';
 
 /* Components */
 @import 'components/all';

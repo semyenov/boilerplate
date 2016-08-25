@@ -1,0 +1,33 @@
+<div class="container padded main">
+  <form class="row">
+    <fieldset class="whole mobile">
+      <legend>Добавить вопрос</legend>
+      <div class="row">
+        <div class="one whole">
+          <label for="questionText">Вопрос</label>
+          <input id="questionText" name="questionText" type="text" placeholder="Текст вопроса">
+        </div>
+      </div>
+      <div class="row">
+        <div class="one half">
+          <label for="questionGroups">Группы</label>
+          <select multiple id="questionGroups" name="questionGroups" >
+            <option value="1">Группа 1</option>
+            <option value="2">Группа 2</option>
+            <option value="3">Группа 3</option>
+          </select>
+        </div>
+      </div>
+    </fieldset>
+  </form>
+</div>
+<div class="container padded questions">
+  <div class="row equalize">
+    <div class="two thirds padded green-bg">
+      <span>Сколько вешать в граммах?</span>
+    </div>
+    <div class="one third padded red-bg">
+      Группы: <span>1,2,3</span>
+    </div>
+  </div>
+</div>

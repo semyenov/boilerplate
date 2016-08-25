@@ -24,22 +24,18 @@ PATHS:
     - "!src/assets/{img,js,scss}/**/*"
   # Paths to Sass libraries, which can then be loaded with @import
   sass:
-    - "bower_components/bootstrap/scss"
-    - "bower_components/simple-line-icons/scss"
-    - "bower_components/font-awesome/scss"
     - "bower_components/PACE/themes"
+    - "bower_components/compass-mixins/lib"
+    - "bower_components/groundworkcss/src/sass"
   # Paths to JavaScript libraries, which are compined into one file
   javascript:
-    # Libraries requried by Bootstrap
+    # Libraries requried by Groundwork
     - "bower_components/jquery/dist/jquery.min.js"
-    - "bower_components/tether/dist/js/tether.min.js"
-    # Core Bootstrap files
-    - "bower_components/bootstrap/dist/js/bootstrap.min.js"
+    - "bower_components/modernizer/modernizr.js"
+    # Core Groundwork files
+    - "bower_components/groundworkcss/js/groundwork.all.js"
     # Libraries
-    - "bower_components/slick-carousel/slick/slick.min.js"
-    - "bower_components/holderjs/holder.min.js"
     - "bower_components/PACE/pace.min.js"
-    - "bower_components/equalize/js/equalize.min.js"
     # My JS files
     - "src/assets/js/!(common).js"
     - "src/assets/js/common.js"

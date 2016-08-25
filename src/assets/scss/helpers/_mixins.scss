@@ -46,7 +46,7 @@
   }
 }
 
-$browser-context: $font-size-root;
+$browser-context: $font-size;
 
 @function em($pixels, $context: $browser-context) {
   @if (unitless($pixels)) {

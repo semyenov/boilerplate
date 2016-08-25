@@ -15,15 +15,11 @@
     "tests"
   ],
   "dependencies": {
-    "bootstrap": "v4.0.0-alpha.2",
-    "slick-carousel": "^1.5.9",
     "jquery": "^2.2.3",
-    "tether": "^1.3.2",
-    "holderjs": "^2.9.3",
-    "simple-line-icons": "^2.2.6",
-    "font-awesome": "^4.6.1",
     "PACE": "pace#^1.0.2",
-    "equalize": "^1.0.2"
+    "modernizer": "^2.8.2",
+    "compass-mixins": "^1.0.2",
+    "groundworkcss": "https://github.com/groundworkcss/groundwork.git#3a450ae"
   },
   "private": true
 }
